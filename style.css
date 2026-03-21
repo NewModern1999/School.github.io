@@ -27,8 +27,6 @@ header h1 {
     letter-spacing: 2px;
 }
 
-
-
 /* MAIN GRID */
 .main {
     display: flex;
@@ -39,15 +37,15 @@ header h1 {
 
 /* LEFT & RIGHT */
 .left, .right {
-    width: 30%;
+    width: 25%;
     text-align: center;
 }
 
 .box {
     background: gold;
-    padding: 10px;
-    border-radius: 30%;
-    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
     animation: fade 2s infinite alternate;
 }
 
@@ -57,13 +55,13 @@ header h1 {
 }
 
 .person img {
-    width: 80px;
-    border-radius: 10%;
+    width: 120px;
+    border-radius: 50%;
 }
 
 /* CENTER */
 .center {
-    width: 60%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,8 +79,8 @@ header h1 {
 
 /* SLIDER */
 .slider img {
-    width: 550px;
-    height: 550px;
+    width: 400px;
+    height: 400px;
     display: none;
     border-radius: 10px;
 }
@@ -90,6 +88,7 @@ header h1 {
 .slider img.active {
     display: block;
 }
+
 
 /* BOTTOM */
 .bottom {
