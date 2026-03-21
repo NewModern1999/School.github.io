@@ -1,4 +1,4 @@
-let slides = document.querySelectorAll(".slides img");
+ let slides = document.querySelectorAll(".slider img");
 let index = 0;
 
 function showSlide() {
@@ -7,9 +7,7 @@ function showSlide() {
     slides[index].classList.add("active");
 
     index++;
-    if (index >= slides.length) {
-        index = 0;
-    }
+    if (index >= slides.length) index = 0;
 
     setTimeout(showSlide, 2000);
 }
