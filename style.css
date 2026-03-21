@@ -22,7 +22,9 @@ header {
 /* Centered title */
 header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 40px;   /* increased size */
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 
