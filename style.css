@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    background: #004080;
+    color: white;
+    padding: 10px;
+}
+
+.logo img {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* INFO SECTION */
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+    background: gold;
+    border-radius: 50%;
+    animation: fade 2s infinite alternate;
+}
+
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0.4;}
+}
+
+/* MANAGEMENT */
+.management {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.person img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* SLIDER */
+.slider {
+    text-align: center;
+    margin: 20px;
+}
+
+.slides img {
+    width: 80%;
+    height: 300px;
+    display: none;
+    border-radius: 10px;
+}
+
+.slides img.active {
+    display: block;
+}
+
+/* NOTICE & FEATURES */
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.notice, .features {
+    width: 40%;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
