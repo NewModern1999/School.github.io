@@ -1,4 +1,4 @@
-body {
+ body {
     margin: 0;
     font-family: Arial;
 }
@@ -12,25 +12,31 @@ header {
     padding: 10px;
 }
 
-.logo img {
-    width: 70px;
+.logo {
+    width: 60px;
+    margin-right: 10px;
     border-radius: 50%;
-    margin-right: 15px;
 }
 
-/* INFO SECTION */
-.info-section {
+/* MAIN GRID */
+.main {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px;
+}
+
+/* LEFT & RIGHT */
+.left, .right {
+    width: 25%;
+    text-align: center;
 }
 
 .box {
-    width: 40%;
-    text-align: center;
-    padding: 20px;
     background: gold;
+    padding: 20px;
     border-radius: 50%;
+    margin-bottom: 20px;
     animation: fade 2s infinite alternate;
 }
 
@@ -39,37 +45,43 @@ header {
     to {opacity: 0.4;}
 }
 
-/* SLIDER */
-.slider {
-    text-align: center;
-    margin: 20px;
-}
-
-.slides img {
-    width: 85%;
-    height: 320px;
-    display: none;
-    border-radius: 12px;
-}
-
-.slides img.active {
-    display: block;
-}
-
-/* MANAGEMENT */
-.management {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
 .person img {
-    width: 150px;
+    width: 120px;
     border-radius: 50%;
 }
 
-/* NOTICE & FEATURES */
-.bottom-section {
+/* CENTER */
+.center {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Vertical SLIDE text */
+.vertical-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #004080;
+}
+
+/* SLIDER */
+.slider img {
+    width: 300px;
+    height: 300px;
+    display: none;
+    border-radius: 10px;
+}
+
+.slider img.active {
+    display: block;
+}
+
+/* BOTTOM */
+.bottom {
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -78,7 +90,7 @@ header {
 .notice, .features {
     width: 40%;
     background: #f2f2f2;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
 }
 
@@ -87,5 +99,5 @@ footer {
     background: #004080;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
