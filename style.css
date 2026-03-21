@@ -39,6 +39,23 @@ header {
     to {opacity: 0.4;}
 }
 
+/* SLIDER */
+.slider {
+    text-align: center;
+    margin: 20px;
+}
+
+.slides img {
+    width: 85%;
+    height: 320px;
+    display: none;
+    border-radius: 12px;
+}
+
+.slides img.active {
+    display: block;
+}
+
 /* MANAGEMENT */
 .management {
     display: flex;
@@ -49,23 +66,6 @@ header {
 .person img {
     width: 150px;
     border-radius: 50%;
-}
-
-/* SLIDER */
-.slider {
-    text-align: center;
-    margin: 20px;
-}
-
-.slides img {
-    width: 80%;
-    height: 300px;
-    display: none;
-    border-radius: 10px;
-}
-
-.slides img.active {
-    display: block;
 }
 
 /* NOTICE & FEATURES */
