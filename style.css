@@ -45,9 +45,9 @@ header h1 {
 
 .box {
     background: gold;
-    padding: 20px;
+    padding: 10px;
     border-radius: 35%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     animation: fade 2s infinite alternate;
 }
 
