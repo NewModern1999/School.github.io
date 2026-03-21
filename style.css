@@ -81,8 +81,8 @@ header h1 {
 
 /* SLIDER */
 .slider img {
-    width: 1000px;
-    height: 1000px;
+    width: 600px;
+    height: 600px;
     display: none;
     border-radius: 10px;
 }
