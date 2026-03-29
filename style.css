@@ -59,6 +59,24 @@ header h1 {
     border-radius: 50%;
 }
 
+/* FULL WIDTH SLIDER */
+.full-slider {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.full-slide {
+    width: 90%;
+    height: 350px;
+    display: none;
+    border-radius: 10px;
+}
+
+.full-slide.active {
+    display: block;
+}
+
 /* CENTER */
 .center {
     width: 40%;
