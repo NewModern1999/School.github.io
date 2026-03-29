@@ -78,27 +78,7 @@ header h1 {
     margin-right: 10px;
     color: #004080;
 }
-  /* FULL WIDTH SLIDER (ISOLATED) */
-.full-slider {
-    position: relative;
-    width: 100%;
-    height:100% ;
-    overflow: hidden;
-}
-
-.full-slider .full-slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-/* Only affects full slider */
-.full-slider .active {
-    opacity: 1;
-}
+ 
 
 
 
