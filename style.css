@@ -7,11 +7,12 @@ body {
 
 /* Wrap all content */
 .container {
+    width: 100%;
     max-width: 1200px;
-    margin: auto;   /* CENTER */
-    background: white;
-}
- 
+    margin: 0 auto;          /* center */
+    padding: 0 15px;         /* spacing from sides */
+    box-sizing: border-box;  /* prevent overflow */
+} 
 
 /* HEADER */
 header {
