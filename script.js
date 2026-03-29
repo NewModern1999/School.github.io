@@ -14,9 +14,8 @@ function showSlide() {
 
 showSlide();
 
-
-/* FULL WIDTH IMAGE SLIDER */
-let fullSlides = document.querySelectorAll(".full-slide");
+/* Full IMAGE SLIDER */
+ let fullSlides = document.querySelectorAll(".full-slide");
 let f = 0;
 
 function fullSlider() {
@@ -27,7 +26,7 @@ function fullSlider() {
     f++;
     if (f >= fullSlides.length) f = 0;
 
-    setTimeout(fullSlider, 2000);
+    setTimeout(fullSlider, 3000); // slower & smooth
 }
 
 fullSlider();
