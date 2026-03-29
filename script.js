@@ -14,26 +14,7 @@ function showSlide() {
 
 showSlide();
 
- /* ===== FULL WIDTH SLIDER ONLY ===== */
-(function () {
-    let fullSlides = document.querySelectorAll(".full-slider .full-slide");
-    let f = 0;
-
-    function fullSlider() {
-        fullSlides.forEach(img => img.classList.remove("active"));
-
-        fullSlides[f].classList.add("active");
-
-        f++;
-        if (f >= fullSlides.length) f = 0;
-
-        setTimeout(fullSlider, 3000);
-    }
-
-    if (fullSlides.length > 0) {
-        fullSlider();
-    }
-})();
+ 
 
 /* IMAGE SLIDER */
 let imgs = document.querySelectorAll(".img-slide");
