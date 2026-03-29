@@ -66,8 +66,8 @@ header h1 {
 }
 
 .slider img {
-    width:500px;
-    height:500px;
+    width:450px;
+    height:450px;
     display:none;
 }
 
@@ -94,7 +94,7 @@ header h1 {
  .full-slider .full-slide {
     width: 98%;
     margin: auto;
-    max-height: 450px;
+    max-height: 500px;
     object-fit: contain;
  }
 
