@@ -91,12 +91,12 @@ header h1 {
 
 
 /* FULL SLIDER FIX */
-.full-slider {
-    position: relative;
+ .full-slider .full-slide {
     width: 90%;
-    height: auto;   /* auto height */
-    text-align: center;
-}
+    margin: auto;
+    max-height: 450px;
+    object-fit: contain;
+ }
 
 .full-slider .full-slide {
     position: absolute;
