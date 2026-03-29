@@ -14,6 +14,24 @@ function showSlide() {
 
 showSlide();
 
+
+/* FULL WIDTH IMAGE SLIDER */
+let fullSlides = document.querySelectorAll(".full-slide");
+let f = 0;
+
+function fullSlider() {
+    fullSlides.forEach(img => img.classList.remove("active"));
+
+    fullSlides[f].classList.add("active");
+
+    f++;
+    if (f >= fullSlides.length) f = 0;
+
+    setTimeout(fullSlider, 2000);
+}
+
+fullSlider();
+
 /* IMAGE SLIDER */
 let imgs = document.querySelectorAll(".img-slide");
 let i = 0;
