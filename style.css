@@ -87,26 +87,32 @@ header h1 {
     padding:15px;
 }
 
-/* FULL SLIDER */
+ 
+
+
+/* FULL SLIDER FIX */
 .full-slider {
-    position:relative;
-    height:400px;
-    overflow:hidden;
+    position: relative;
+    width: 100%;
+    height: auto;   /* auto height */
+    text-align: center;
 }
 
 .full-slider .full-slide {
-    position:absolute;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0;
-    transition:1s;
+    position: absolute;
+    width: 100%;
+    height: auto;   /* keep original ratio */
+    max-height: 500px;
+    object-fit: contain;  /* SHOW FULL IMAGE */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
+/* active image */
 .full-slider .active {
-    opacity:1;
+    opacity: 1;
+    position: relative;
 }
-
 /* MEDIA */
 .media-section {
     display:flex;
