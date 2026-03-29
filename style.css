@@ -54,28 +54,12 @@ header h1 {
     to {opacity: 0.4;}
 }
 
-.person img {
+.per/son img {
     width: 120px;
     border-radius: 50%;
 }
 
-/* FULL WIDTH SLIDER */
-.full-slider {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-}
 
-.full-slide {
-    width: 90%;
-    height: 350px;
-    display: none;
-    border-radius: 10px;
-}
-
-.full-slide.active {
-    display: block;
-}
 
 /* CENTER */
 .center {
@@ -94,6 +78,30 @@ header h1 {
     margin-right: 10px;
     color: #004080;
 }
+
+/* FULL WIDTH SLIDER */
+.full-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* All images stacked */
+.full-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Active image visible */
+.full-slide.active {
+    opacity: 1;
+}
+
 
 /* SLIDER */
 .slider img {
