@@ -1,4 +1,167 @@
- body {
+
+body { margin:0; font-family:Arial; }
+
+/* HEADER */
+header {
+    position: relative;
+    background:#004080;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.logo {
+    position:absolute;
+    left:15px;
+    top:10px;
+    width:60px;
+    border-radius:50%;
+}
+
+header h1 {
+    font-size:40px;
+}
+
+/* MAIN */
+.main {
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
+}
+
+.left, .right {
+    width:25%;
+    text-align:center;
+}
+
+.box {
+    background:gold;
+    padding:20px;
+    border-radius:50%;
+    margin-bottom:20px;
+    animation:fade 2s infinite alternate;
+}
+
+@keyframes fade {
+    from{opacity:1;}
+    to{opacity:0.4;}
+}
+
+.person img {
+    width:120px;
+    border-radius:50%;
+}
+
+/* CENTER */
+.center {
+    display:flex;
+    align-items:center;
+}
+
+.vertical-text {
+    display:flex;
+    flex-direction:column;
+    font-size:30px;
+    margin-right:10px;
+}
+
+.slider img {
+    width:300px;
+    height:300px;
+    display:none;
+}
+
+.slider img.active {
+    display:block;
+}
+
+/* NOTICE */
+.bottom {
+    display:flex;
+    justify-content:space-around;
+}
+
+.notice, .features {
+    width:40%;
+    background:#f2f2f2;
+    padding:15px;
+}
+
+/* FULL SLIDER */
+.full-slider {
+    position:relative;
+    height:400px;
+    overflow:hidden;
+}
+
+.full-slider .full-slide {
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:1s;
+}
+
+.full-slider .active {
+    opacity:1;
+}
+
+/* MEDIA */
+.media-section {
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
+}
+
+.video-box, .image-box {
+    width:45%;
+}
+
+.video-slide, .img-slide {
+    width:100%;
+    height:300px;
+    display:none;
+}
+
+.video-slide.active,
+.img-slide.active {
+    display:block;
+}
+
+/* MAP */
+.map {
+    text-align:center;
+}
+
+.map iframe {
+    width:80%;
+    height:300px;
+}
+
+/* BIG LINK */
+.big-link {
+    text-align:center;
+    margin:20px;
+}
+
+.big-link a {
+    font-size:30px;
+    color:red;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer {
+    background:#004080;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+
+/*
+body {
     margin: 0;
     font-family: Arial;
 }
@@ -174,3 +337,4 @@ footer {
 .map-btn:hover {
     background-color: #1b4f72;
 }
+*/
