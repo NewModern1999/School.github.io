@@ -14,22 +14,26 @@ function showSlide() {
 
 showSlide();
 
-/* Full IMAGE SLIDER */
- let fullSlides = document.querySelectorAll(".full-slide");
-let f = 0;
+ /* ===== FULL WIDTH SLIDER ONLY ===== */
+(function () {
+    let fullSlides = document.querySelectorAll(".full-slider .full-slide");
+    let f = 0;
 
-function fullSlider() {
-    fullSlides.forEach(img => img.classList.remove("active"));
+    function fullSlider() {
+        fullSlides.forEach(img => img.classList.remove("active"));
 
-    fullSlides[f].classList.add("active");
+        fullSlides[f].classList.add("active");
 
-    f++;
-    if (f >= fullSlides.length) f = 0;
+        f++;
+        if (f >= fullSlides.length) f = 0;
 
-    setTimeout(fullSlider, 3000); // slower & smooth
-}
+        setTimeout(fullSlider, 3000);
+    }
 
-fullSlider();
+    if (fullSlides.length > 0) {
+        fullSlider();
+    }
+})();
 
 /* IMAGE SLIDER */
 let imgs = document.querySelectorAll(".img-slide");
