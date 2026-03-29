@@ -92,7 +92,7 @@ header h1 {
 
 /* FULL SLIDER FIX */
  .full-slider .full-slide {
-    width: 90%;
+    width: 98%;
     margin: auto;
     max-height: 450px;
     object-fit: contain;
@@ -100,7 +100,7 @@ header h1 {
 
 .full-slider .full-slide {
     position: absolute;
-    width: 90%;
+    width: 98%;
     height: auto;   /* keep original ratio */
     
     object-fit: contain;  /* SHOW FULL IMAGE */
