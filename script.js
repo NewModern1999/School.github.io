@@ -53,70 +53,70 @@ videoSlider();
 
 
 /* IMAGE SLIDER */
-let imgs = document.querySelectorAll(".img-slide1");
+let imgs1 = document.querySelectorAll(".img-slide1");
 let i = 0;
 
 function imageSlider1() {
-    imgs.forEach(img => img.classList.remove("active"));
-    imgs[i].classList.add("active");
+    imgs1.forEach(img1 => img1.classList.remove("active"));
+    imgs1[i].classList.add("active");
 
     i++;
-    if (i >= imgs.length) i = 0;
+    if (i >= imgs1.length) i = 0;
 
     setTimeout(imageSlider1, 3500);
 }
 imageSlider1();
 
 /* VIDEO SLIDER */
-let videos = document.querySelectorAll(".video-slide");
+let videos1 = document.querySelectorAll(".video-slide1");
 let v = 0;
 
 function videoSlider1() {
-    videos.forEach(video => {
-        video.classList.remove("active");
-        video.pause();
+    videos1.forEach(video1 => {
+        video1.classList.remove("active");
+        video1.pause();
     });
 
-    videos[v].classList.add("active");
-    videos[v].play();
+    videos1[v].classList.add("active");
+    videos1[v].play();
 
     v++;
-    if (v >= videos.length) v = 0;
+    if (v >= videos1.length) v = 0;
 
     setTimeout(videoSlider1, 10000);
 }
 videoSlider1();
 
 /* IMAGE SLIDER */
-let imgs = document.querySelectorAll(".img-slide2");
+let imgs2 = document.querySelectorAll(".img-slide2");
 let i = 0;
 
 function imageSlider2() {
-    imgs.forEach(img => img.classList.remove("active"));
-    imgs[i].classList.add("active");
+    imgs2.forEach(img2 => img2.classList.remove("active"));
+    imgs2[i].classList.add("active");
 
     i++;
-    if (i >= imgs.length) i = 0;
+    if (i >= imgs2.length) i = 0;
 
     setTimeout(imageSlider2, 3000);
 }
 imageSlider2();
 
 /* VIDEO SLIDER */
-let videos = document.querySelectorAll(".video-slide");
+let videos2 = document.querySelectorAll(".video-slide2");
 let v = 0;
 
 function videoSlider2() {
-    videos.forEach(video => {
-        video.classList.remove("active");
-        video.pause();
+    videos2.forEach(video2 => {
+        video2.classList.remove("active");
+        video2.pause();
     });
 
-    videos[v].classList.add("active");
-    videos[v].play();
+    videos2[v].classList.add("active");
+    videos2[v].play();
 
     v++;
-    if (v >= videos.length) v = 0;
+    if (v >= videos2.length) v = 0;
 
     setTimeout(videoSlider2, 10000);
 }
