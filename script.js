@@ -56,22 +56,22 @@ videoSlider();
 let imgs1 = document.querySelectorAll(".img-slide1");
 let i = 0;
 
-function imageSlider1() {
+function imageSlider() {
     imgs1.forEach(img1 => img1.classList.remove("active"));
     imgs1[i].classList.add("active");
 
     i++;
     if (i >= imgs1.length) i = 0;
 
-    setTimeout(imageSlider1, 3500);
+    setTimeout(imageSlider, 3500);
 }
-imageSlider1();
+imageSlider();
 
 /* VIDEO SLIDER */
 let videos1 = document.querySelectorAll(".video-slide1");
 let v = 0;
 
-function videoSlider1() {
+function videoSlider() {
     videos1.forEach(video1 => {
         video1.classList.remove("active");
         video1.pause();
@@ -83,30 +83,30 @@ function videoSlider1() {
     v++;
     if (v >= videos1.length) v = 0;
 
-    setTimeout(videoSlider1, 10000);
+    setTimeout(videoSlider, 10000);
 }
-videoSlider1();
+videoSlider();
 
 /* IMAGE SLIDER */
 let imgs2 = document.querySelectorAll(".img-slide2");
 let i = 0;
 
-function imageSlider2() {
+function imageSlider() {
     imgs2.forEach(img2 => img2.classList.remove("active"));
     imgs2[i].classList.add("active");
 
     i++;
     if (i >= imgs2.length) i = 0;
 
-    setTimeout(imageSlider2, 3000);
+    setTimeout(imageSlider, 3000);
 }
-imageSlider2();
+imageSlider();
 
 /* VIDEO SLIDER */
 let videos2 = document.querySelectorAll(".video-slide2");
 let v = 0;
 
-function videoSlider2() {
+function videoSlider() {
     videos2.forEach(video2 => {
         video2.classList.remove("active");
         video2.pause();
@@ -118,7 +118,7 @@ function videoSlider2() {
     v++;
     if (v >= videos2.length) v = 0;
 
-    setTimeout(videoSlider2, 10000);
+    setTimeout(videoSlider, 10000);
 }
-videoSlider2();
+videoSlider();
 
