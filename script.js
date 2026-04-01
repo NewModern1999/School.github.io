@@ -8,7 +8,7 @@ function run(){
     slides[index].classList.add("active");
 
     index = (index + 1) % slides.length;
-    setTimeout(run, 2000);
+    setTimeout(run, 7000);
 }
 if(slides.length) run();
 })();
@@ -24,7 +24,7 @@ function run1(){
     imgs1[i1].classList.add("active");
 
     i1 = (i1 + 1) % imgs1.length;
-    setTimeout(run1, 2500);
+    setTimeout(run1, 4500);
 }
 if(imgs1.length) run1();
 })();
@@ -42,7 +42,7 @@ function runV1(){
     vids1[v1].play();
 
     v1 = (v1 + 1) % vids1.length;
-    setTimeout(runV1, 5000);
+    setTimeout(runV1, 20000);
 }
 if(vids1.length) runV1();
 })();
@@ -58,7 +58,7 @@ function run2(){
     imgs2[i2].classList.add("active");
 
     i2 = (i2 + 1) % imgs2.length;
-    setTimeout(run2, 3500);
+    setTimeout(run2, 6500);
 }
 if(imgs2.length) run2();
 })();
@@ -76,7 +76,7 @@ function runV2(){
     vids2[v2].play();
 
     v2 = (v2 + 1) % vids2.length;
-    setTimeout(runV2, 10000);
+    setTimeout(runV2, 50000);
 }
 if(vids2.length) runV2();
 })();
@@ -92,7 +92,7 @@ function run3(){
     imgs3[i3].classList.add("active");
 
     i3 = (i3 + 1) % imgs3.length;
-    setTimeout(run3, 3000);
+    setTimeout(run3, 9000);
 }
 if(imgs3.length) run3();
 })();
@@ -110,7 +110,7 @@ function runV3(){
     vids3[v3].play();
 
     v3 = (v3 + 1) % vids3.length;
-    setTimeout(runV3, 10000);
+    setTimeout(runV3, 70000);
 }
 if(vids3.length) runV3();
 })();
