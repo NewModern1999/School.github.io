@@ -1,4 +1,4 @@
- let slides = document.querySelectorAll(".slider img");
+let slides = document.querySelectorAll(".slider img");
 let index = 0;
 
 function showSlide() {
@@ -53,70 +53,70 @@ videoSlider();
 
 
 /* IMAGE SLIDER */
-let imgs1 = document.querySelectorAll(".img-slide1");
+let imgs = document.querySelectorAll(".img-slide1");
 let i = 0;
 
 function imageSlider() {
-    imgs1.forEach(img1 => img1.classList.remove("active"));
-    imgs1[i].classList.add("active");
+    imgs.forEach(img => img.classList.remove("active"));
+    imgs[i].classList.add("active");
 
     i++;
-    if (i >= imgs1.length) i = 0;
+    if (i >= imgs.length) i = 0;
 
     setTimeout(imageSlider, 3500);
 }
 imageSlider();
 
 /* VIDEO SLIDER */
-let videos1 = document.querySelectorAll(".video-slide1");
+let videos = document.querySelectorAll(".video-slide1");
 let v = 0;
 
 function videoSlider() {
-    videos1.forEach(video1 => {
-        video1.classList.remove("active");
-        video1.pause();
+    videos.forEach(video => {
+        video.classList.remove("active");
+        video.pause();
     });
 
-    videos1[v].classList.add("active");
-    videos1[v].play();
+    videos[v].classList.add("active");
+    videos[v].play();
 
     v++;
-    if (v >= videos1.length) v = 0;
+    if (v >= videos.length) v = 0;
 
     setTimeout(videoSlider, 10000);
 }
 videoSlider();
 
 /* IMAGE SLIDER */
-let imgs2 = document.querySelectorAll(".img-slide2");
+let imgs = document.querySelectorAll(".img-slide2");
 let i = 0;
 
 function imageSlider() {
-    imgs2.forEach(img2 => img2.classList.remove("active"));
-    imgs2[i].classList.add("active");
+    imgs.forEach(img => img.classList.remove("active"));
+    imgs[i].classList.add("active");
 
     i++;
-    if (i >= imgs2.length) i = 0;
+    if (i >= imgs.length) i = 0;
 
     setTimeout(imageSlider, 3000);
 }
 imageSlider();
 
 /* VIDEO SLIDER */
-let videos2 = document.querySelectorAll(".video-slide2");
+let videos = document.querySelectorAll(".video-slide2");
 let v = 0;
 
 function videoSlider() {
-    videos2.forEach(video2 => {
-        video2.classList.remove("active");
-        video2.pause();
+    videos.forEach(video => {
+        video.classList.remove("active");
+        video.pause();
     });
 
-    videos2[v].classList.add("active");
-    videos2[v].play();
+    videos[v].classList.add("active");
+    videos[v].play();
 
     v++;
-    if (v >= videos2.length) v = 0;
+    if (v >= videos.length) v = 0;
 
     setTimeout(videoSlider, 10000);
 }
