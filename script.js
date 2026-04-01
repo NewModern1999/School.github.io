@@ -1,124 +1,118 @@
+/* ===== CENTER SLIDER ===== */
+(function(){
 let slides = document.querySelectorAll(".slider img");
 let index = 0;
 
-function showSlide() {
+function run(){
     slides.forEach(img => img.classList.remove("active"));
-
     slides[index].classList.add("active");
 
-    index++;
-    if (index >= slides.length) index = 0;
-
-    setTimeout(showSlide, 2000);
+    index = (index + 1) % slides.length;
+    setTimeout(run, 2000);
 }
+if(slides.length) run();
+})();
 
-showSlide();
 
- 
+/* ===== IMAGE SLIDER 1 ===== */
+(function(){
+let imgs1 = document.querySelectorAll(".img-slide");
+let i1 = 0;
 
-/* IMAGE SLIDER */
-let imgs = document.querySelectorAll(".img-slide");
-let i = 0;
+function run1(){
+    imgs1.forEach(img => img.classList.remove("active"));
+    imgs1[i1].classList.add("active");
 
-function imageSlider() {
-    imgs.forEach(img => img.classList.remove("active"));
-    imgs[i].classList.add("active");
-
-    i++;
-    if (i >= imgs.length) i = 0;
-
-    setTimeout(imageSlider, 2500);
+    i1 = (i1 + 1) % imgs1.length;
+    setTimeout(run1, 2500);
 }
-imageSlider();
+if(imgs1.length) run1();
+})();
 
-/* VIDEO SLIDER */
-let videos = document.querySelectorAll(".video-slide");
-let v = 0;
 
-function videoSlider() {
-    videos.forEach(video => {
-        video.classList.remove("active");
-        video.pause();
-    });
+/* ===== VIDEO SLIDER 1 ===== */
+(function(){
+let vids1 = document.querySelectorAll(".video-slide");
+let v1 = 0;
 
-    videos[v].classList.add("active");
-    videos[v].play();
+function runV1(){
+    vids1.forEach(v => { v.classList.remove("active"); v.pause(); });
 
-    v++;
-    if (v >= videos.length) v = 0;
+    vids1[v1].classList.add("active");
+    vids1[v1].play();
 
-    setTimeout(videoSlider, 5000);
+    v1 = (v1 + 1) % vids1.length;
+    setTimeout(runV1, 5000);
 }
-videoSlider();
+if(vids1.length) runV1();
+})();
 
 
-/* IMAGE SLIDER */
-let imgs = document.querySelectorAll(".img-slide1");
-let i = 0;
+/* ===== IMAGE SLIDER 2 ===== */
+(function(){
+let imgs2 = document.querySelectorAll(".img-slide1");
+let i2 = 0;
 
-function imageSlider() {
-    imgs.forEach(img => img.classList.remove("active"));
-    imgs[i].classList.add("active");
+function run2(){
+    imgs2.forEach(img => img.classList.remove("active"));
+    imgs2[i2].classList.add("active");
 
-    i++;
-    if (i >= imgs.length) i = 0;
-
-    setTimeout(imageSlider, 3500);
+    i2 = (i2 + 1) % imgs2.length;
+    setTimeout(run2, 3500);
 }
-imageSlider();
+if(imgs2.length) run2();
+})();
 
-/* VIDEO SLIDER */
-let videos = document.querySelectorAll(".video-slide1");
-let v = 0;
 
-function videoSlider() {
-    videos.forEach(video => {
-        video.classList.remove("active");
-        video.pause();
-    });
+/* ===== VIDEO SLIDER 2 ===== */
+(function(){
+let vids2 = document.querySelectorAll(".video-slide1");
+let v2 = 0;
 
-    videos[v].classList.add("active");
-    videos[v].play();
+function runV2(){
+    vids2.forEach(v => { v.classList.remove("active"); v.pause(); });
 
-    v++;
-    if (v >= videos.length) v = 0;
+    vids2[v2].classList.add("active");
+    vids2[v2].play();
 
-    setTimeout(videoSlider, 10000);
+    v2 = (v2 + 1) % vids2.length;
+    setTimeout(runV2, 10000);
 }
-videoSlider();
+if(vids2.length) runV2();
+})();
 
-/* IMAGE SLIDER */
-let imgs = document.querySelectorAll(".img-slide2");
-let i = 0;
 
-function imageSlider() {
-    imgs.forEach(img => img.classList.remove("active"));
-    imgs[i].classList.add("active");
+/* ===== IMAGE SLIDER 3 ===== */
+(function(){
+let imgs3 = document.querySelectorAll(".img-slide2");
+let i3 = 0;
 
-    i++;
-    if (i >= imgs.length) i = 0;
+function run3(){
+    imgs3.forEach(img => img.classList.remove("active"));
+    imgs3[i3].classList.add("active");
 
-    setTimeout(imageSlider, 3000);
+    i3 = (i3 + 1) % imgs3.length;
+    setTimeout(run3, 3000);
 }
-imageSlider();
+if(imgs3.length) run3();
+})();
 
-/* VIDEO SLIDER */
-let videos = document.querySelectorAll(".video-slide2");
-let v = 0;
 
-function videoSlider() {
-    videos.forEach(video => {
-        video.classList.remove("active");
-        video.pause();
-    });
+/* ===== VIDEO SLIDER 3 ===== */
+(function(){
+let vids3 = document.querySelectorAll(".video-slide2");
+let v3 = 0;
 
-    videos[v].classList.add("active");
-    videos[v].play();
+function runV3(){
+    vids3.forEach(v => { v.classList.remove("active"); v.pause(); });
 
-    v++;
-    if (v >= videos.length) v = 0;
+    vids3[v3].classList.add("active");
+    vids3[v3].play();
 
-    setTimeout(videoSlider, 10000);
+    v3 = (v3 + 1) % vids3.length;
+    setTimeout(runV3, 10000);
 }
-videoSlider();
+if(vids3.length) runV3();
+})();
+
 
