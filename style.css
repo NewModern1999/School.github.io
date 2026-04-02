@@ -118,8 +118,10 @@ header h1 {
 
 .video-slide1, .img-slide1 {
     width:85%;
-    height:900px;
-    display:none;
+    height: auto;
+    display: block;
+    margin: 0 auto;  
+    
     justify-content: center;
     align-items:center;
 }
@@ -138,8 +140,10 @@ header h1 {
 
 .video-slide2, .img-slide2 {
     width:85%;
-    height:900px;
-    display:none;
+    height: auto;
+    display: block;
+    margin: 0 auto;   
+
     justify-content: center;
     align-items:center;
 }
