@@ -64,22 +64,7 @@ if(imgs2.length) run2();
 })();
 
 
-/* ===== VIDEO SLIDER 2 ===== */
-(function(){
-let vids2 = document.querySelectorAll(".video-slide1");
-let v2 = 0;
-
-function runV2(){
-    vids2.forEach(v => { v.classList.remove("active"); v.pause(); });
-
-    vids2[v2].classList.add("active");
-    vids2[v2].play();
-
-    v2 = (v2 + 1) % vids2.length;
-    setTimeout(runV2, 50000);
-}
-if(vids2.length) runV2();
-})();
+ 
 
 
 /* ===== IMAGE SLIDER 3 ===== */
@@ -97,22 +82,4 @@ function run3(){
 if(imgs3.length) run3();
 })();
 
-
-/* ===== VIDEO SLIDER 3 ===== */
-(function(){
-let vids3 = document.querySelectorAll(".video-slide2");
-let v3 = 0;
-
-function runV3(){
-    vids3.forEach(v => { v.classList.remove("active"); v.pause(); });
-
-    vids3[v3].classList.add("active");
-    vids3[v3].play();
-
-    v3 = (v3 + 1) % vids3.length;
-    setTimeout(runV3, 70000);
-}
-if(vids3.length) runV3();
-})();
-
-
+ 
