@@ -111,7 +111,10 @@ header h1 {
 /* 1 */
 .video-box1, .image-box1 {
     width:100%;
+    justify-content: center;
+    align-items:center;
 }
+
 
 .video-slide1, .img-slide1 {
     width:85%;
@@ -128,6 +131,9 @@ header h1 {
 /* 2 */
 .video-box2, .image-box2 {
     width:100%;
+   justify-content: center;
+    align-items:center;
+ 
 }
 
 .video-slide2, .img-slide2 {
