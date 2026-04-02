@@ -121,9 +121,7 @@ header h1 {
     height: auto;
     display: block;
     margin: 0 auto;  
-    
-    justify-content: center;
-    align-items:center;
+
 }
 
 .video-slide1.active,
@@ -142,10 +140,7 @@ header h1 {
     width:85%;
     height: auto;
     display: block;
-    margin: 0 auto;   
-
-    justify-content: center;
-    align-items:center;
+    margin: 0 auto;  
 }
 
 .video-slide2.active,
