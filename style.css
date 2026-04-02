@@ -119,7 +119,7 @@ header h1 {
 .video-slide1, .img-slide1 {
     width:85%;
     height: auto;
-    display: block;
+    display: none;
     margin: 0 auto;  
 
 }
@@ -139,7 +139,7 @@ header h1 {
 .video-slide2, .img-slide2 {
     width:85%;
     height: auto;
-    display: block;
+    display: none;
     margin: 0 auto;  
 }
 
