@@ -110,13 +110,14 @@ header h1 {
 }
 /* 1 */
 .video-box1, .image-box1 {
-    width:85%;
+    width:100%;
 }
 
 .video-slide1, .img-slide1 {
-    width:100%;
+    width:85%;
     height:900px;
     display:none;
+    align-items:center;
 }
 
 .video-slide1.active,
@@ -125,13 +126,14 @@ header h1 {
 }
 /* 2 */
 .video-box2, .image-box2 {
-    width:85%;
+    width:100%;
 }
 
 .video-slide2, .img-slide2 {
-    width:100%;
+    width:85%;
     height:900px;
     display:none;
+    align-items:center;
 }
 
 .video-slide2.active,
