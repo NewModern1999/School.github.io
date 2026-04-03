@@ -114,6 +114,7 @@ header h1 {
 .video-slide.active,
 .img-slide.active {
     display:block;
+}
 
 /* 1 */
  .image-box1 {
