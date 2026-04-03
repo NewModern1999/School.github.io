@@ -82,4 +82,18 @@ function run3(){
 if(imgs3.length) run3();
 })();
 
- 
+
+/* ===== IMAGE SLIDER 4 ===== */
+(function(){
+let imgs4 = document.querySelectorAll(".img-slide3");
+let i4 = 0;
+
+function run4(){
+    imgs4.forEach(img => img.classList.remove("active"));
+    imgs4[i4].classList.add("active");
+
+    i4 = (i4 + 1) % imgs4.length;
+    setTimeout(run4, 9000);
+}
+if(imgs4.length) run4();
+})();
